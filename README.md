@@ -25,7 +25,8 @@ This website is built automatically using GitHub Pages. The main page you're rea
 ## How to setup your own portfolio
 - fork this repo
 - go to the **settings** tab on top of your github page
-- on the left-hand menu, click on **Pages**
+- first, enable issues by scrolling down, and under "features" check the "issues" checkbox. 
+- Then, on the left-hand menu click on the **Pages** tab
 - under build and deployment, select `deploy from a branch`
 - select main/root and save
 
