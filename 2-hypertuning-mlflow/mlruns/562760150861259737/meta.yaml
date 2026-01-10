@@ -1,0 +1,6 @@
+artifact_location: file:///Users/christelvanharen/MADS/Semester 3/MADS-ML-CVH/2-hypertuning-mlflow/mlruns/562760150861259737
+creation_time: 1758050177569
+experiment_id: '562760150861259737'
+last_update_time: 1758050177569
+lifecycle_stage: active
+name: mlflow-dropout-bn-gridsearch

@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/christelvanharen/MADS/Semester 3/MADS-ML-CVH/2-hypertuning-mlflow/mlruns/562760150861259737/0d28446b9d064ac3b236a432f174c762/artifacts
+end_time: 1758479666549
+entry_point_name: ''
+experiment_id: '562760150861259737'
+lifecycle_stage: active
+run_id: 0d28446b9d064ac3b236a432f174c762
+run_name: conv-32-64-lin-256-drop0.25
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1758479552979
+status: 3
+tags: []
+user_id: christelvanharen

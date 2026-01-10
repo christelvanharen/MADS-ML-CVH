@@ -1,0 +1,35 @@
+artifact_path: /Users/christelvanharen/MADS/Semester 3/MADS-ML-CVH/3-hypertuning-rnn/mlruns/1/models/m-284acbdd287a4c4ca1fc59f525febe83/artifacts
+flavors:
+  python_function:
+    config:
+      device: null
+    data: data
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.pytorch
+    pickle_module_name: mlflow.pytorch.pickle_module
+    python_version: 3.12.9
+  pytorch:
+    code: null
+    model_data: data
+    pytorch_version: 2.8.0
+is_signature_from_type_hint: false
+mlflow_version: 3.3.2
+model_id: m-284acbdd287a4c4ca1fc59f525febe83
+model_size_bytes: 1884441
+model_uuid: m-284acbdd287a4c4ca1fc59f525febe83
+prompts: null
+run_id: 0fbf7618696e4e16b55853a45350e014
+saved_input_example_info:
+  artifact_path: input_example.json
+  serving_input_path: serving_input_example.json
+  type: ndarray
+signature:
+  inputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float32", "shape": [-1, 30,
+    3]}}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float32", "shape": [-1,
+    20]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2025-09-22 17:51:35.199461'

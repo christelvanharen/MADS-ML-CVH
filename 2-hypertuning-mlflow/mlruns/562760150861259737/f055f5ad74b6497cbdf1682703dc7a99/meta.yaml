@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/christelvanharen/MADS/Semester 3/MADS-ML-CVH/2-hypertuning-mlflow/mlruns/562760150861259737/f055f5ad74b6497cbdf1682703dc7a99/artifacts
+end_time: 1758050247227
+entry_point_name: ''
+experiment_id: '562760150861259737'
+lifecycle_stage: active
+run_id: f055f5ad74b6497cbdf1682703dc7a99
+run_name: grid-u128-u128-drop0.3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1758050235861
+status: 3
+tags: []
+user_id: christelvanharen

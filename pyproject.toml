@@ -1,7 +1,7 @@
 [project]
 name = "portfolio-example"
 version = "0.1.0"
-description = "Add your description here"
+description = "Portfolio semester 3 MADS"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [

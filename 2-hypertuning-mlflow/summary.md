@@ -5,17 +5,17 @@ Find the [notebook](./notebook.ipynb) and the [instructions](./instructions.md).
 [Go back to Homepage](../README.md)
 
 ## Hypothesis
-I expected validation accuracy to improve when the first hidden layer offered enough capacity to extract features (≥128 units) while the second layer stayed slightly narrower (64–256 units) to encourage generalisation. Very small layers would likely underfit, while identical widths might converge more slowly.
+I expected convolutional feature extractors with batch normalisation and dropout to outperform the earlier MLP baseline. Wider early conv blocks should capture richer texture patterns, while slightly stronger dropout would mitigate overfitting caused by the extra capacity.
 
 ## Experiment design
-Dataset: Fashion-MNIST via mads_datasets, batch size 64, default preprocessor.
-Model: Two-hidden-layer MLP (units1, units2) with ReLU activations.
-Training: 3 epochs with Adam (lr=1e-3) and cross-entropy loss.
-Grid: units1, units2 ∈ {64, 128, 256}.
-Logging: TensorBoard scalars and TOML configs per run.
+Dataset: Fashion-MNIST via `mads_datasets`, batch size 64, default preprocessor.
+Architecture: ConvClassifier with two conv blocks (Conv2d → BatchNorm2d → ReLU → MaxPool2d → Dropout) followed by a linear head with BatchNorm1d and dropout.
+Hyperparameter grid: conv_channels ∈ {(32, 64), (64, 128)}, linear_units ∈ {(128,), (256,)}, dropout ∈ {0.25, 0.35}.
+Training: 3 epochs, Adam (lr=1e-3, weight_decay=1e-5), ReduceLROnPlateau scheduler, early-stop monitor disabled.
+Logging: TensorBoard scalars, TOML configs, and MLflow (complete with signatures/input examples).
 
 ## Findings
-Best run: units1=128, units2=256 reached validation accuracy ≈0.872 with validation loss ≈0.355.
-Increasing the first layer from 64 → 128 units improved accuracy across all second-layer sizes.
-Very wide second layers (e.g. 256 when units1=256) showed diminishing returns and sometimes reduced accuracy.
-All setups converged quickly within 3 epochs, with larger first layers stabilising loss earlier.
+Best run (conv 64-128, linear 256, dropout 0.35) reached validation accuracy 0.9048 — a clear gain over the ≈0.87 MLP baseline.
+Increasing conv channel widths consistently helped; the deeper head benefited from pairing the larger conv stack with 256 hidden units.
+Dropout 0.35 gave the most stable validation curve for the high-capacity models, whereas 0.25 sometimes overfit after epoch two.
+Adding batch normalisation and logging the model signature in MLflow made comparison and deployment readiness smoother.

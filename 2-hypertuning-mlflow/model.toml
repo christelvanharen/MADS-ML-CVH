@@ -1,0 +1,13 @@
+[model]
+training = true
+num_classes = 10
+conv_channels = [32, 64]
+linear_units = [128]
+dropout_rate = 0.3
+
+[types]
+training = "bool"
+num_classes = "int"
+conv_channels = "list"
+linear_units = "list"
+dropout_rate = "float"

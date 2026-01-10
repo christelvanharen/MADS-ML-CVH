@@ -1,0 +1,6 @@
+*.pt
+/vaemodels
+models
+logs
+data
+img

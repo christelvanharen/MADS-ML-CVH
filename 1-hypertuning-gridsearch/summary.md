@@ -5,7 +5,7 @@ Find the [notebook](./notebook.ipynb) and the [instructions](./instructions.md).
 [Go back to Homepage](../README.md)
 
 ## Hypothesis
-Validation accuracy should improve when the first hidden layer is large enough (≥128 units) to extract features, while keeping the second layer slightly narrower (64–256 units) encourages generalisation. Very small layers may underfit; equal widths could converge slower.
+I expected that giving the model enough capacity in the first hidden layer (around 128 units) would help it learn useful features, while keeping the second layer a bit narrower (roughly 64–256 units) would encourage better generalisation. Very small layers would likely underfit, and making both layers equally wide might slow training.
 
 ## Experiment design
 Dataset: Fashion-MNIST via mads_datasets, batch size 64, default preprocessor.

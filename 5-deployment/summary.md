@@ -1,6 +1,4 @@
-# Summary week 5
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+# Deployment
 
-[Go back to Homepage](../README.md)
-
+This deployment part of the portfolio has been done in another repo. See [Git repo deployment](https://github.com/christelvanharen/MADS-deployment.git).
 

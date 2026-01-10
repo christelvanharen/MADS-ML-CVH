@@ -1,0 +1,23 @@
+artifact_path: file:///Users/christelvanharen/MADS/Semester 3/MADS-ML-CVH/2-hypertuning-mlflow/mlruns/562760150861259737/models/m-7f423b257d2443efb71a027d28bf31ba/artifacts
+flavors:
+  python_function:
+    config:
+      device: null
+    data: data
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.pytorch
+    pickle_module_name: mlflow.pytorch.pickle_module
+    python_version: 3.12.9
+  pytorch:
+    code: null
+    model_data: data
+    pytorch_version: 2.8.0
+mlflow_version: 3.3.2
+model_id: m-7f423b257d2443efb71a027d28bf31ba
+model_size_bytes: 253347
+model_uuid: m-7f423b257d2443efb71a027d28bf31ba
+prompts: null
+run_id: 196ba8bfc03546e685d4e576c7b5b6ab
+utc_time_created: '2025-09-16 19:17:58.230524'

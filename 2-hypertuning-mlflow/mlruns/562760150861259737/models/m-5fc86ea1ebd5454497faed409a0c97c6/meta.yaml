@@ -1,0 +1,10 @@
+artifact_location: file:///Users/christelvanharen/MADS/Semester 3/MADS-ML-CVH/2-hypertuning-mlflow/mlruns/562760150861259737/models/m-5fc86ea1ebd5454497faed409a0c97c6/artifacts
+creation_timestamp: 1758528892648
+experiment_id: '562760150861259737'
+last_updated_timestamp: 1758528895753
+model_id: m-5fc86ea1ebd5454497faed409a0c97c6
+model_type: null
+name: model
+source_run_id: 646712bc6f9a4254b2f516e30aa09307
+status: 2
+status_message: null
